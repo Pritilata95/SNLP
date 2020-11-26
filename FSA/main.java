@@ -5,14 +5,19 @@
  */
 package FSA;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Pritilata
  */
 public class main {
     public static void main(String[] args){
-        String grammar1 = "State\ta\tb\t!\n0\t5\t1\t5\n1\t2\t5\t5\n2\t3\t5\t5\n3\t3\t5\t4\n4:\t5\t5\t5\n5\t5\t5\t5";
-        Automata automata = new Automata(grammar1);
-        System.out.println(automata.acceptsString("baca!"));
+        
+        String grammar1 =  "State\t!\ti\ta\th\tI\n7\t7\t7\t7\t7\t7\n1\t7\t2\t4\t3\t7\n3\t7\t7\t4\t3\t7\n5:\t6\t7\t7\t5\t7\n6:\t7\t7\t7\t7\t7\n0\t7\t2\t7\t7\t1\n2\t7\t2\t4\t3\t7\n4:\t6\t7\t4\t5\t7";
+        Automata automata = new Automata(grammar1);     
+        System.out.println(automata.acceptsString("Iaaaaahhhh!a")) ;
+        
+   
     }
 }
