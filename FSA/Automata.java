@@ -11,6 +11,45 @@ import java.util.Arrays;
  *
  * @author Pritilata
  */
+/*
+
+We are using the baa! sheep example from the slides but your implementation 
+has to accept other grammars as well. The transition matrix is given as a tab separated String:
+
+State    a    b    !
+0    5    1    5
+1    2    5    5
+2    3    5    5
+3    3    5    4
+4:    5    5    5
+5    5    5    5
+
+(Note that this notebook renders the example above with whitespaces but the data in the tests will use tabs.) 
+For the line endings, the \n character is used (might be important for Windows users!).
+
+The transition matrix contains a head line and after that one state per line.
+The head line starts with the String State. After that, the single input characters are listed.
+The single status lines show the transitions from the left state to the other states 
+given the input characters defined in the head state. 
+For example, there is a transition from state 0 to 5 if a or ! are read and a transition to 1 if b is read.
+The end state(s) are marked with :. In the example, state 4 is the only end state.
+
+Hints
+* 0 is always the start state.
+* There can be multiple end states.
+* The state with the highest ID in the grammar is always the error state (in the example, it is the state 5). 
+  This is the state the automata gets into if a character is read that does not fit 
+  to the grammar at that particular position. It can also be seen that the automata can not leave the error state.
+* All characters that are not listed in the head should directly lead to the error state.
+* The lines below the head line don't have to be ordered (i.e., the states can be defined in any order).
+* The class Automata has two methods - parseGrammar and acceptsString. 
+  The first method is called when constructing the Automata and should parse the grammar. 
+  Later, the second method is called and should calculate a result based on the grammar and the input String. 
+  Note that you may want to add some class attributes to make sure that you can store the parsed information 
+  (i.e., the transitions) in the parseGrammar method to be able to use them later on in the acceptsString method.
+
+*/
+
 public class Automata {
         // YOUR CODE HERE
     
