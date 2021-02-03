@@ -34,11 +34,11 @@ The example sentence for the test is:
 > There was a theologian named Aristides the Athenian.
 
 Please make sure that only the words are selected without leading or trailing whitespaces or punctuation characters.
-
+```java
 String pattern2 = null;
 // YOUR CODE HERE
 pattern2 = "[Tt][h][e][a-z]+|[A-z]+[t][h][e][a-z]*";
-
+```
 ## Task 3
 
 Define a pattern for selecting all words that have the substring `"the"` but not `"theo"`. Note that in contrast to the previous task, `"the"` does not have to be a true subset, i.e., the word `"the"` should be selected as well.
@@ -49,18 +49,19 @@ The example sentence for the test is:
 Note that the tests do _not_ contain the special case words that have both substrings, e.g., `"theotherapy"` containing `"theo"` and `"the"` is excluded from tests.
 
 Please make sure that only the words are selected without leading or trailing whitespaces or punctuation characters.
-
+```java
 String pattern3 = null;
 // YOUR CODE HERE
 pattern3 = "[A-z]*[Tt][Hh][Ee](?![oO])[A-z]*";
-
+```
 ## Task 4
 
 Define a pattern for selecting all words containing at least three times the character `a` (including its uppercase variant `A`).
 
 The example sentence for the test is:
 > Anastasia would like to have a banana split.
-
+```java
 String pattern4 = null;
 // YOUR CODE HERE
 pattern4 = "[B-z]*[aA][B-z]*[aA][B-z]*[aA][A-z]*";
+```
