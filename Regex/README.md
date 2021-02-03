@@ -21,11 +21,11 @@ Define a pattern for selecting all abbreviations. You can assume that an abbrevi
 
 The example sentence for the example test is:
 > The IEE shouldn't be confused with the IEEE. The latter was found in 1871 and merged with the IERE, IIE and IET.
-
+```java
 String pattern1 = null;
 // YOUR CODE HERE
 pattern1 = "[A-Z][A-Z][A-Z]*";
-
+```
 ## Task 2
 
 Define a pattern for selecting all words that have `"the"` as a _true subset_, i.e., words that contain it as a substring but have at least one more character.
